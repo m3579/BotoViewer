@@ -10,7 +10,7 @@ using Microsoft.Bot.Connector.Utilities;
 using Newtonsoft.Json;
 using Microsoft.Bot.Builder.Dialogs;
 
-namespace HireBot
+namespace BotoViewer
 {
     [BotAuthentication]
     public class MessagesController : ApiController
