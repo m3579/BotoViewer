@@ -8,7 +8,6 @@ using System.Web.Http.Description;
 using Microsoft.Bot.Connector;
 using Microsoft.Bot.Connector.Utilities;
 using Newtonsoft.Json;
-using Microsoft.Bot.Builder.Dialogs;
 
 namespace HireMeBot
 {
@@ -23,8 +22,11 @@ namespace HireMeBot
         {
             if (message.Type == "Message")
             {
+                // calculate something for us to return
+                int length = (message.Text ?? string.Empty).Length;
+
                 // return our reply to the user
-                return await Conversation.SendAsync(message, () => new EchoDialog());
+                return message.CreateReplyMessage($"You sent {length} characters");
             }
             else
             {
