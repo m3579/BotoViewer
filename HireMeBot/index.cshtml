@@ -9,14 +9,7 @@
     <script>
         function setQuestions()
         {
-            $.ajax({
-                type: "GET",
-                url: "/",
-                data: "",
-                success: function (returnValue) {
-                    alert(returnValue);
-                }
-            });
+            @HireMeBot.EmployerSide.EmployerPortalFunctions.SetQuestions("Hi");
         }
     </script>
 </head>
