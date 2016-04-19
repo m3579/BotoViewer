@@ -8,6 +8,7 @@ using System.Web.Http.Description;
 using Microsoft.Bot.Connector;
 using Microsoft.Bot.Connector.Utilities;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace HireMeBot
 {
@@ -34,6 +35,11 @@ namespace HireMeBot
             }
         }
 
+        /// <summary>
+        /// Handle messages that are used by the Bot framework
+        /// </summary>
+        /// <param name="message">What the message is</param>
+        /// <returns>The response to the message</returns>
         private Message HandleSystemMessage(Message message)
         {
             if (message.Type == "Ping")

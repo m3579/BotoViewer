@@ -101,8 +101,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="App_Start\EmployerPortalHandler.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="EmployerSide\EmployerData.cs" />
+    <Compile Include="EmployerSide\EmployerPortalFunctions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web.Http;
 
@@ -23,7 +24,7 @@ namespace HireMeBot
             };
 
             // Web API configuration and services
-
+            
             // Web API routes
             config.MapHttpAttributeRoutes();
 
