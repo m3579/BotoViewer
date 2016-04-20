@@ -28,6 +28,24 @@ namespace HireMeBot.InterviewData
             }
         }
 
+        private IList<Objective> objectives;
+        /// <summary>
+        /// The knowledge that the employer wants to gain from this question,
+        /// represented by an <see cref="Objective"/>
+        /// </summary>
+        public IList<Objective> Objectives
+        {
+            get
+            {
+                return objectives;
+            }
+
+            set
+            {
+                objectives = value;
+            }
+        }
+
         //private IList<Characteristic> characteristics;
         ///// <summary>
         ///// The qualities that the employer is looking for in the answer

@@ -123,6 +123,7 @@
     <None Include="index.cshtml" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="InterviewData\Characteristics.txt" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\nugetexample.js" />
@@ -139,6 +140,7 @@
     <Compile Include="InterviewData\Characteristic.cs" />
     <Compile Include="InterviewData\Experience.cs" />
     <Compile Include="InterviewData\Keyword.cs" />
+    <Compile Include="InterviewData\Objective.cs" />
     <Compile Include="InterviewData\Question.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

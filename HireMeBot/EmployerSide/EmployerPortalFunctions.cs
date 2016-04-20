@@ -15,5 +15,11 @@ namespace HireMeBot.EmployerSide
             Debug.WriteLine("Hello");
             return false;
         }
+
+        [WebMethod]
+        public static IList<string> GetCharacteristics()
+        {
+            return new List<string> { "calm", "mean" };
+        }
     }
 }
