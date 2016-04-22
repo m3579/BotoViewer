@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\EmployerController.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="EmployerSide\EmployerData.cs" />
     <Compile Include="EmployerSide\EmployerPortalFunctions.cs" />

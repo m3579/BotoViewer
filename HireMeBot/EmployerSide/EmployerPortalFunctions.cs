@@ -7,6 +7,7 @@ using System.Web.Services;
 
 namespace HireMeBot.EmployerSide
 {
+    [WebService]
     public class EmployerPortalFunctions
     {
         [WebMethod]
