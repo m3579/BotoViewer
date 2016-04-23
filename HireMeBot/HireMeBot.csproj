@@ -120,34 +120,33 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="index.cshtml" />
+    <Content Include="Web\Homepage\indexjs.js" />
+    <None Include="Web\Homepage\index.cshtml" />
     <Content Include="Global.asax" />
-    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <None Include="JSReferences\jquery-2.1.1.intellisense.js" />
     <Content Include="InterviewData\Characteristics.txt" />
-    <Content Include="Scripts\jquery-2.1.1.js" />
-    <Content Include="Scripts\jquery-2.1.1.min.js" />
-    <Content Include="Scripts\nugetexample.js" />
+    <Content Include="JSReferences\jquery-2.1.1.js" />
+    <Content Include="JSReferences\jquery-2.1.1.min.js" />
+    <Content Include="JSReferences\nugetexample.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\EmployerController.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
-    <Compile Include="EmployerSide\EmployerData.cs" />
-    <Compile Include="EmployerSide\EmployerPortalFunctions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="InterviewData\Characteristic.cs" />
+    <Compile Include="EmployerSide\OverallCriteriaModel.cs" />
     <Compile Include="InterviewData\Experience.cs" />
     <Compile Include="InterviewData\Keyword.cs" />
     <Compile Include="InterviewData\Objective.cs" />
-    <Compile Include="InterviewData\Question.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <Content Include="JSReferences\jquery-2.1.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
