@@ -9,7 +9,7 @@
 
         // Put them in a form
         $.each(characteristics, function (key, value) {
-            $("#characteristics form").append("<input type='radio' name='characteristics' value='" + value + "' />" + value + "<br>");
+            $("#characteristics form").append("<input type='checkbox' name='characteristics' value='" + value + "' />" + value + "<br>");
         });
     });
 });
@@ -36,9 +36,16 @@ function sendCharacteristics()
         }
     });
     
-    alert(selectedCharstcs);
+    $.ajax({
+        url: "/api/employer/characteristics",
 
-    $.post("/api/employer/characteristics", {
-        selectedCharstcs
+        method: "POST",
+
+        data: JSON.stringify(
+        {
+            "characteristics": selectedCharstcs
+        }),
+        
+        contentType: "application/json"
     });
 }

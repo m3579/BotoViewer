@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace HireMeBot.InterviewData
+namespace HireMeBot.InterviewCriteria
 {
     /// <summary>
     /// The experience (college courses, places worked) that the employer

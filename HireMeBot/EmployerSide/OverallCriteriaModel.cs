@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-using HireMeBot.InterviewData;
+using HireMeBot.InterviewCriteria;
 
 namespace HireMeBot.EmployerSide
 {
@@ -65,6 +65,24 @@ namespace HireMeBot.EmployerSide
             set
             {
                 keywords = value;
+            }
+        }
+
+        private About about;
+        /// <summary>
+        /// Information about the candidate (such as hobbies or a
+        /// favorite sports team)
+        /// </summary>
+        public About About
+        {
+            get
+            {
+                return about;
+            }
+
+            set
+            {
+                about = value;
             }
         }
 

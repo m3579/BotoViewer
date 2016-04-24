@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Web.Http;
 
 using HireMeBot.EmployerSide;
-using HireMeBot.InterviewData;
+using HireMeBot.InterviewCriteria;
 
 namespace HireMeBot.Controllers
 {
@@ -28,7 +28,7 @@ namespace HireMeBot.Controllers
         [Route("api/employer/{key}")]
         public IList<string> Get(string key)
         {
-            Debug.WriteLine("Called with key: " + key);
+            Debug.WriteLine("REST GET CALL api/employer/" + key);
 
             switch (key)
             {
@@ -45,9 +45,9 @@ namespace HireMeBot.Controllers
         }
         
         [Route("api/employer/characteristics")]
-        public void Post([FromBody]IList<string> characteristics)
+        public void Post([FromBody]CharacteristicsPOSTModel characteristics)
         {
-            Debug.WriteLine("REST API call api/employer/characteristics");
+            Debug.WriteLine("REST POST call api/employer/characteristics");
 
             if (characteristics == null)
             {
@@ -57,8 +57,13 @@ namespace HireMeBot.Controllers
 
             OverallCriteriaModel overallCriteria = OverallCriteriaModel.GetInstance();
 
-            Debug.WriteLine(characteristics.Count);
+            if (characteristics.characteristics == null)
+            {
+                Debug.WriteLine("Characteristics is null");
+            }
 
+            Debug.WriteLine(characteristics.characteristics.Count);
+            
             //foreach (string characteristic in characteristics)
             //{
             //    overallCriteria.Characteristics.Add(new Characteristic(characteristic));

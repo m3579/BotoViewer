@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HireMeBot.InterviewData
+namespace HireMeBot.InterviewCriteria
 {
     /// <summary>
     /// A word that the employer thinks is good if the interviewee uses

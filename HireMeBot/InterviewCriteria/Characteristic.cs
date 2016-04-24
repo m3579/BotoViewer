@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 
-namespace HireMeBot.InterviewData
+namespace HireMeBot.InterviewCriteria
 {
     /// <summary>
     /// Qualities that the employer wants in the interviewee.
